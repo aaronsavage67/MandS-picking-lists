@@ -4,9 +4,12 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        FileReader fileReader = new FileReader();
+        String upc = null;
+        String productName = null;
 
-        fileReader.readFromFile();
-        fileReader.sortProducts();
+        Product product = new Product(upc, productName);
+
+        product.readFromFile();
+        product.sortProducts();
     }
 }
